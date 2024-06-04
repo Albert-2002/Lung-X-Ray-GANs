@@ -1,0 +1,17 @@
+**Problem Statements:**
+
+1. Given a set of clean chest X-ray images, insert extraneous objects in a realistic way.
+2. Given a set of chest X-ray images with extraneous objects, eliminate foreground objects that obscure the human anatomy.
+
+**Expected Outcome**
+
+A Deep Learning model trained for an image editing(insertion/elimination) task, along with the inference scripts.
+Extra points if the same model can cater to both tasks.
+
+**Extra:**
+
+Data preparation for Deep Learning Models in such a situation can proceed in two ways - On the training data,
+detect the presence of such extraneous objects in individual images and airbrush them,
+to create a more homogenous cohort of data. Alternatively, insert extraneous objects into ‘pristine’ images to enrich the data variety of the cohort.
+In the first instance, Deep Learning model can safely infer on the presented X-ray image and in the second instance,
+the increased availability of external objects will help the model factor in the noise during inference.
